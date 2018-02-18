@@ -48,6 +48,7 @@ namespace AspNetCoreTodo
             {
                 app.UseDeveloperExceptionPage();
                 app.UseDatabaseErrorPage();
+                Console.WriteLine("My Name Is Jaggesher Mondal. ");
             }
             else
             {
