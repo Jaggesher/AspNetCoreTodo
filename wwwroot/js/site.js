@@ -7,7 +7,8 @@ $(document).ready(function() {
 function addItem() {
     $('#add-item-error').hide();
     var newTitle = $('#add-item-title').val();
-    $.post('/Todo/AddItem', { title: newTitle }, function() {
+    var newDate = $("#add-item-date").val();
+    $.post('/Todo/AddItem', { title: newTitle, date: newDate }, function() {
             window.location = '/Todo';
         })
         .fail(function(data) {

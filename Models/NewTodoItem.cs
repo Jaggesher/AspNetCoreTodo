@@ -5,5 +5,8 @@ namespace AspNetCoreTodo.Models{
 
         [Required]
         public string Title {get; set;}
+        
+        [Required]
+        public string Date {get; set;}
     }
 }
